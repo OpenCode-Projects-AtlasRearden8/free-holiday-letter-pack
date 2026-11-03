@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Save the Date Card</title>
+<link rel="stylesheet" href="../assets/css/print.css">
+<style>
+  @page { size: 8.5in 11in; margin: 0.4in; }
+  body { font-family: "Mulish", "Sen", Arial, sans-serif; }
+
+  .frame-wrap { height: 5.1in; margin-bottom: 0.35in; }
+  .card-frame {
+    height: 100%;
+    border: 1pt solid var(--forest);
+    outline: 3pt double var(--forest);
+    padding: 0.15in;
+  }
+  .card-inner {
+    height: 100%;
+    border: 0.5pt solid #cfd8d3;
+    background: var(--cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3in;
+    text-align: center;
+  }
+  .sprig { color: var(--pine); font-size: 15pt; letter-spacing: 0.5em; margin-bottom: 0.14in; }
+  .pretitle { font-size: 9.5pt; letter-spacing: 0.34em; text-transform: uppercase; color: var(--soft-ink); margin-bottom: 0.12in; }
+  .script-title { font-family: "Great Vibes", cursive; font-size: 52pt; color: var(--forest); line-height: 1.1; margin-bottom: 0.1in; }
+  .names { font-family: "Playfair Display", Georgia, serif; font-size: 18pt; margin-top: 0.08in; }
+  .attr { font-size: 11pt; color: var(--soft-ink); }
+  .when { margin-top: 0.22in; font-size: 11.5pt; letter-spacing: 0.05em; }
+  .when b { color: var(--cranberry); font-size: 15pt; letter-spacing: 0.08em; }
+  .loc { margin-top: 6pt; font-size: 10pt; color: var(--soft-ink); }
+  .rsvp { margin-top: 0.2in; font-size: 8.5pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--pine); }
+
+  .panel {
+    display: flex;
+    margin-top: 0.15in;
+  }
+  .panel .box {
+    flex: 1;
+    padding: 0.14in 0.16in;
+    border: 0.75pt solid #d8d2c4;
+    border-radius: 4pt;
+    background: #fffdf7;
+    margin-right: 0.25in;
+  }
+  .panel .box:last-child { margin-right: 0; }
+  .panel h2 { font-size: 9pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cranberry); margin-bottom: 5pt; }
+  .panel p, .panel li { font-size: 9pt; color: var(--soft-ink); }
+  .panel ul { list-style: none; }
+  .panel li { padding: 2.5pt 0; border-bottom: 0.5pt dashed #e4ddce; }
+  .panel li:last-child { border-bottom: none; }
+  .alt-script { font-family: "Sacramento", "Great Vibes", cursive; font-size: 14pt; color: var(--pine); margin-bottom: 8pt; }
+</style>
+</head>
+<body>
+  <div class="frame-wrap">
+    <div class="card-frame">
+      <div class="card-inner">
+        <div class="sprig">&#10022;&#10022;&#10022;</div>
+        <div class="pretitle">Mark the calendar, tell the gang</div>
+        <div class="script-title">Save the Date</div>
+        <div class="names">Noah &amp; Priya <span class="attr">are tying the knot</span></div>
+        <div class="when">Saturday, <b>June 12, 2027</b></div>
+        <div class="loc">The Birchwood Barn &middot; 42 Orchard Road &middot; Maple Hill</div>
+        <div class="rsvp">Formal invitation to follow</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="box">
+      <h2>Swap in your occasion</h2>
+      <ul>
+        <li><b>Wedding</b> &mdash; keep as printed.</li>
+        <li><b>Winter party</b> &mdash; change ink colors to cranberry &amp; gold, title to "Save the Snow Date."</li>
+        <li><b>Birthday / graduation / reunion</b> &mdash; same card, kinder words, cake guaranteed.</li>
+        <li><b>Baby's first day</b> &mdash; title "Save the Cuddle Date," no rsvp necessary.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>How to use this page</h2>
+      <p>1. Change any name, date, or place in the HTML file &mdash; the placeholders are examples.</p>
+      <p style="margin-top:5pt;">2. Run <code style="font-size:8.5pt;">python3 build.py --only save-the-date</code> to rebuild the PDF.</p>
+      <p style="margin-top:5pt;">3. Print on cardstock for a poster-style announcement, or fold a corner crease and mail it as-is in a 9x6 envelope.</p>
+      <div class="alt-script">Good news travels; terrible puns travel faster.</div>
+    </div>
+  </div>
+</body>
+</html>

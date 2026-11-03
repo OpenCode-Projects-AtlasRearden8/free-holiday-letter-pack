@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Holiday Family Letter - Modern</title>
+<link rel="stylesheet" href="../assets/css/print.css">
+<style>
+  @page { size: 8.5in 11in; margin: 0.45in; }
+  .masthead {
+    background: var(--forest);
+    color: #ffffff;
+    border-radius: 6pt;
+    padding: 0.28in 0.3in;
+    display: flex;
+  }
+  .masthead .greet { flex: 1.4; }
+  .masthead .year { flex: 1; text-align: right; align-self: flex-end; }
+  .masthead h1 { font-family: "Mulish", "Sen", Arial, sans-serif; font-size: 21pt; font-weight: 700; letter-spacing: 0.01em; }
+  .masthead .hello { font-size: 9.5pt; letter-spacing: 0.14em; text-transform: uppercase; color: #cfdfd5; margin-bottom: 6pt; }
+  .masthead .year span { font-family: "Playfair Display", Georgia, serif; font-size: 30pt; font-weight: 700; color: #f3d48a; }
+  .masthead .year small { display: block; font-size: 8pt; letter-spacing: 0.18em; text-transform: uppercase; color: #cfdfd5; }
+
+  .layout { display: flex; margin-top: 0.28in; }
+  .main { flex: 1.7; padding-right: 0.22in; }
+  .side { flex: 1; }
+
+  .photo { height: 2.55in; margin-bottom: 0.2in; }
+  .side .photo { height: 2.1in; }
+
+  .main h2, .side h3 { font-size: 10pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cranberry); margin: 0 0 6pt; }
+  .main p { margin-bottom: 8pt; }
+  .side ul { list-style: none; }
+  .side li {
+    border-bottom: 0.5pt solid #dddcd2;
+    padding: 6pt 0;
+    font-size: 10pt;
+    color: var(--soft-ink);
+  }
+  .side li b { color: var(--ink); font-weight: 700; }
+
+  .mentions { margin-top: 0.22in; padding-top: 8pt; border-top: 1pt solid var(--forest); display: flex; }
+  .mentions .sign { flex: 1; }
+  .mentions .contact { flex: 1; text-align: right; font-size: 9pt; color: var(--soft-ink); }
+  .mentions .contact b { display: block; font-size: 8pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--forest); margin-bottom: 3pt; }
+  .big-name { font-family: "Great Vibes", cursive; font-size: 19pt; color: var(--forest); }
+
+  .side h3 { margin-top: 10pt; }
+  .side h3:first-child { margin-top: 0; }
+</style>
+</head>
+<body class="flex-col">
+
+  <header class="masthead">
+    <div class="greet">
+      <div class="hello">Warmest wishes from the</div>
+      <h1>The Henderson Family</h1>
+    </div>
+    <div class="year">
+      <small>Happening</small>
+      <span>2026</span>
+    </div>
+  </header>
+
+  <div class="layout flex-row">
+    <div class="main">
+      <div class="ph photo">
+        <span class="ph-note">Paste your favorite photo of the year here</span>
+        <span class="ph-tip">or: drop your image between &lt;div class="ph photo"&gt; and this box, then rebuild</span>
+      </div>
+      <h2>Our year in the shortest letter we could manage</h2>
+      <p>Dear friends and family, it has been a full, good year. We moved gardens around, lost a glove, found a better recipe, and finally fixed the porch light. The kids grew more than the tomatoes, which is saying something, because the tomatoes did great.</p>
+      <p>In March we taught Milo to ride without training wheels, in July we took the trip Grandma has been planning since forever, and in October our street's block party had actual traffic cones again. There were ordinary Tuesdays too, and honestly we loved most of them.</p>
+      <p>Wherever you are this season, we hope your table is full, your batteries are charged, and your socks have no holes. Come see us if you can. We mean it.</p>
+      <div class="mentions" style="margin-bottom:6pt;">
+        <div class="sign"><span class="big-name">Alex, Sam &amp; Milo</span></div>
+      </div>
+    </div>
+
+    <div class="side">
+      <h3>This year, in short</h3>
+      <ul>
+        <li><b>Milo, age 9</b> &mdash; lost two teeth, found a lizard, keeps them both in memory.</li>
+        <li><b>Alex</b> &mdash; finished the deck, started the sourdough, burned exactly one loaf.</li>
+        <li><b>Sam</b> &mdash; new role at work, still the fastest jigsaw puzzler in the house.</li>
+        <li><b>The dog</b> &mdash; still good. Extra good. Needs no update.</li>
+      </ul>
+      <h3>Favorite little moment</h3>
+      <div class="write-line rounded" style="font-family:'Patrick Hand',cursive;">The night the whole family sang the wrong words to the same song, loudly, on purpose.</div>
+      <div class="ph" style="height:1.5in;margin-top:8pt;">
+        <span class="ph-note">Small photo spot</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mentions">
+    <div class="sign">
+      <b style="font-size:8pt;letter-spacing:0.16em;text-transform:uppercase;color:var(--forest);">Sending love to</b>
+      <span class="fine">you, your people, and the chairs you finally put around a table.</span>
+    </div>
+    <div class="contact">
+      <b>Find us</b>
+      123 Spruce Lane, Anytown &middot; hello@example.com
+    </div>
+  </div>
+
+</body>
+</html>

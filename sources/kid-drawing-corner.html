@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kid Drawing Corner</title>
+<link rel="stylesheet" href="../assets/css/print.css">
+<style>
+  @page { size: 8.5in 11in; margin: 0.4in; }
+  body { font-family: "Mulish", "Sen", Arial, sans-serif; }
+
+  .head { display: flex; align-items: flex-end; margin-bottom: 0.16in; }
+  .head .h-left { flex: 1; }
+  .head .h-script { font-family: "Sacramento", "Great Vibes", cursive; font-size: 34pt; color: var(--cranberry); line-height: 1; }
+  .head .h-sub { font-size: 9.5pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--soft-ink); margin-top: 5pt; }
+  .head .h-badge {
+    width: 1.5in; background: var(--gold); color: #fff9ea;
+    border-radius: 5pt; padding: 8pt 10pt; font-size: 8.5pt; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase; text-align: center;
+  }
+
+  .canvas {
+    height: 6.1in;
+    border: 2pt solid var(--pine);
+    border-radius: 6pt;
+    background:
+      repeating-linear-gradient(transparent, transparent 0.46in, #e7efe8 0.46in, #e7efe8 calc(0.46in + 1pt));
+    position: relative;
+  }
+  .canvas .corner-mark {
+    position: absolute; right: 12pt; bottom: 10pt;
+    font-size: 26pt; color: #c8bb6c;
+  }
+
+  .labels { display: flex; margin-top: 9pt; }
+  .labels .lab { flex: 1; font-size: 9pt; color: var(--soft-ink); }
+  .labels .lab .write-line { font-family: "Patrick Hand", "Caveat", cursive; font-size: 13pt; min-height: 1.6em; margin-top: 3pt; }
+  .labels .lab:not(:last-child) { margin-right: 0.25in; }
+  .labels .k { font-size: 8pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--pine); font-weight: 700; }
+
+  .prompt-band { border-top: 0.75pt solid #d8d2c4; margin-top: 0.16in; padding-top: 0.14in; display: flex; }
+  .prompt-band .p-num { font-family: "Playfair Display", Georgia, serif; font-size: 26pt; color: #d9cba0; margin-right: 10pt; line-height: 1; }
+  .prompt-band .p-main { flex: 1; }
+  .prompt-band .p-q { font-size: 10pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); font-weight: 700; }
+  .prompt-band .p-a { font-family: "Patrick Hand", "Caveat", cursive; font-size: 14pt; color: #4c4c4c; min-height: 1.5em; border-bottom: 0.75pt solid #c9c2b4; margin-top: 5pt; }
+
+  .tip { margin-top: 8pt; font-size: 8pt; color: #9aa3a0; text-align: center; letter-spacing: 0.06em; }
+</style>
+</head>
+<body>
+  <div class="head">
+    <div class="h-left">
+      <div class="h-script">The Drawing Corner</div>
+      <div class="h-sub">Art department by the smallest Henderson &middot; by M. Henderson, age 9</div>
+    </div>
+    <div class="h-badge">Gallery Grade<br>of &#10024;100&#10024; Stars</div>
+  </div>
+
+  <div class="canvas">
+    <div class="corner-mark">&#9734;</div>
+  </div>
+
+  <div class="labels">
+    <div class="lab">
+      <span class="k">Artist</span>
+      <div class="write-line">Milo, professional snowman maker</div>
+    </div>
+    <div class="lab">
+      <span class="k">Title of Piece</span>
+      <div class="write-line">Our family at the beach</div>
+    </div>
+    <div class="lab">
+      <span class="k">Date</span>
+      <div class="write-line">November 2026</div>
+    </div>
+  </div>
+
+  <div class="prompt-band">
+    <div class="p-num">&#9734;</div>
+    <div class="p-main">
+      <div class="p-q">In one sentence, what is this drawing about?</div>
+      <div class="p-a">Everybody is smiling because it snowed, and dad fell in a snow drift.</div>    </div>
+  </div>
+  <div class="tip">Tip for grown-ups: scan the finished drawing and swap it into the photo box on the family letter &mdash; instant yearly art exhibit.</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Holiday Party Invitation</title>
+<link rel="stylesheet" href="../assets/css/print.css">
+<style>
+  @page { size: 8.5in 11in; margin: 0.4in; }
+  body { font-family: "Mulish", "Sen", Arial, sans-serif; }
+
+  .ticket-row { display: flex; margin-bottom: 0.3in; }
+  .invite {
+    flex: 1;
+    border: 1pt solid var(--forest);
+    background: var(--cream);
+    padding: 0.22in;
+    margin-right: 0.25in;
+  }
+  .stub {
+    width: 1.6in;
+    border: 1pt dashed var(--cranberry);
+    border-radius: 5pt;
+    background: #fdf4f1;
+    padding: 0.18in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cranberry);
+  }
+  .stub .s-top { font-size: 8pt; letter-spacing: 0.22em; text-transform: uppercase; }
+  .stub .s-year { font-family: "Playfair Display", Georgia, serif; font-size: 21pt; font-weight: 700; margin-top: 6pt; }
+  .stub .s-yes { margin-top: 6pt; font-size: 8.5pt; line-height: 1.5; }
+  .stub .s-line { width: 80%; border-top: 0.75pt solid var(--cranberry); margin: 8pt 0; }
+
+  .band { display: flex; align-items: flex-end; border-bottom: 1.25pt solid var(--forest); padding-bottom: 8pt; }
+  .band .b-script { font-family: "Great Vibes", cursive; font-size: 40pt; color: var(--pine); line-height: 1; flex: 1; }
+  .band .b-node { font-size: 9pt; letter-spacing: 0.3em; text-transform: uppercase; color: var(--soft-ink); text-align: right; line-height: 1.6; }
+
+  .intro { margin: 10pt 0 12pt; font-size: 10.5pt; color: var(--ink); width: 88%; }
+
+  table.details { width: 100%; border-collapse: collapse; margin-bottom: 12pt; }
+  table.details td { padding: 6pt 4pt; border-bottom: 0.5pt solid #d9d4c7; vertical-align: top; font-size: 10.5pt; }
+  table.details td.k {
+    width: 1.1in;
+    font-size: 8pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cranberry);
+    padding-top: 8pt;
+    font-weight: 700;
+  }
+
+  .menu-strip { display: flex; background: var(--pine); border-radius: 5pt; color: #eef6ef; padding: 8pt 10pt; font-size: 9pt; letter-spacing: 0.08em; margin-bottom: 14pt; }
+  .menu-strip span { flex: 1; text-align: center; }
+  .menu-strip b { font-size: 8pt; display: block; color: #cfe6cf; margin-bottom: 2pt; letter-spacing: 0.2em; text-transform: uppercase; }
+
+  .rsvp-foot { display: flex; align-items: flex-start; }
+  .rsvp-note { flex: 1; font-size: 9.5pt; color: var(--soft-ink); padding-top: 4pt; }
+  .rsvp-slip {
+    width: 2.35in;
+    border: 0.75pt solid var(--ink);
+    padding: 8pt 10pt;
+    font-size: 8.5pt;
+  }
+  .rsvp-slip .title { font-size: 8pt; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink); margin-bottom: 6pt; font-weight: 700; }
+  .rsvp-slip .fill { display: block; margin-top: 9pt; }
+  .rsvp-slip .fill::after { content: ""; display: block; border-bottom: 0.75pt solid #6b6b6b; margin-top: 5pt; }
+</style>
+</head>
+<body>
+  <div class="ticket-row">
+    <div class="invite">
+      <div class="band">
+        <div class="b-script">You're Invited!</div>
+        <div class="b-node">Sunday, December 13<br>at Six O'Clock</div>
+      </div>
+      <p class="intro">Please come over! We are having our second (decorated) winter party, and it will be no fun at all unless the people we like are standing in the kitchen holding snacks and arguing about gravy.</p>
+      <table class="details">
+        <tr><td class="k">When</td><td>Sunday, December 13, 2026 &middot; 4:00 p.m. until the cocoa runs out (typically 8:30 p.m., occasionally embarrassing)</td></tr>
+        <tr><td class="k">Where</td><td>The Henderson House &middot; 123 Spruce Lane, Anytown &middot; keep going past the mailbox and follow the lights</td></tr>
+        <tr><td class="k">Bring</td><td>Your favorite mug, a dish of something you are proud of, and zero excuses about diets</td></tr>
+        <tr><td class="k">Wear</td><td>Ugly sweaters are encouraged; glitter is honorably discharged</td></tr>
+        <tr><td class="k">RSVP</td><td>By December 6 &middot; text or call Sam at 555-0142, or reply to hello@example.com</td></tr>
+      </table>
+      <div class="menu-strip">
+        <span><b>Soup</b>big pot</span>
+        <span><b>Bread</b>warm &amp; endless</span>
+        <span><b>Sweets</b>competitive</span>
+        <span><b>Cocoa</b>bottomless</span>
+        <span><b>Music</b>classic &amp; borrowed</span>
+      </div>
+      <div class="rsvp-foot">
+        <div class="rsvp-note">Kids welcome and also requested, since they are the current experts on cookies and cartwheels. If December 13th is tricky, tell us; we will happily overflow to tea the following Saturday.</div>
+        <div class="rsvp-slip">
+          <div class="title">Will you come?</div>
+          <span class="fill">Name(s)</span>
+          <span class="fill">Yes / bringer of no &nbsp;&middot;&nbsp; # of guests</span>
+          <span class="fill">Your dish (if you'd like)</span>
+        </div>
+      </div>
+    </div>
+    <div class="stub">
+      <div class="s-top">Admit one table</div>
+      <div class="s-year">2026</div>
+      <div class="s-line"></div>
+      <div class="s-yes">We really hope you can come.</div>
+      <div class="s-line"></div>
+      <div class="s-top">Kitchen &middot; open till late</div>
+    </div>
+  </div>
+</body>
+</html>

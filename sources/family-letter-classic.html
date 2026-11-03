@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Holiday Family Letter - Classic</title>
+<link rel="stylesheet" href="../assets/css/print.css">
+<style>
+  @page { size: 8.5in 11in; margin: 0.55in; }
+  body { font-family: "Libre Baskerville", "EB Garamond", Georgia, serif; }
+
+  .envelope-top { display: flex; justify-content: space-between; font-size: 8.5pt; color: var(--soft-ink); letter-spacing: 0.06em; }
+  .envelope-top .return { text-align: left; }
+  .envelope-top .date { text-align: right; font-style: italic; }
+
+  .masthead { text-align: center; margin-top: 0.25in; }
+  .ornament { font-size: 13pt; color: var(--gold); letter-spacing: 0.55em; margin-bottom: 8pt; }
+  .masthead h1 { font-size: 20pt; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink); }
+  .masthead .salute { font-family: "Great Vibes", cursive; font-size: 17pt; color: var(--pine); margin-top: 7pt; }
+  .double-rule { border-top: 1.25pt solid var(--ink); border-bottom: 0.5pt solid var(--ink); height: 3pt; margin: 10pt 0 0; }
+
+  .photo { height: 2.5in; margin: 0.25in auto 0.25in; width: 60%; }
+
+  .columns { display: flex; }
+  .col { flex: 1; }
+  .col.first { padding-right: 0.18in; border-right: 0.5pt solid #d8d2c4; margin-right: 0.18in; }
+  .columns p { margin-bottom: 9pt; font-size: 10.5pt; line-height: 1.6; }
+
+  .dropcap::first-letter {
+    font-size: 24pt;
+    color: var(--cranberry);
+    font-weight: 700;
+  }
+
+  .signoff { margin-top: 0.3in; }
+  .signoff .blessing { font-style: italic; color: var(--soft-ink); font-size: 9.5pt; text-align: center; margin-bottom: 10pt; }
+  .signoff .names { text-align: right; }
+  .signoff .script-name { font-family: "Great Vibes", cursive; font-size: 19pt; color: var(--ink); }
+  .signoff .who { font-size: 9pt; color: var(--soft-ink); }
+</style>
+</head>
+<body>
+  <div class="envelope-top">
+    <div class="return">The Henderson Family<br>123 Spruce Lane, Anytown</div>
+    <div class="date">December 2026</div>
+  </div>
+
+  <div class="masthead">
+    <div class="ornament">&#10022;&#10022;&#10022;</div>
+    <h1>The Hendersons</h1>
+    <div class="salute">A letter for the cheerful among you</div>
+    <div class="double-rule"></div>
+  </div>
+
+  <div class="ph photo">
+    <span class="ph-note">Paste your family photo here</span>
+    <span class="ph-tip">a classic portrait, a wobbly candid, or a pet in a hat - all acceptable</span>
+  </div>
+
+  <div class="columns">
+    <div class="col first">
+      <p class="dropcap">Dear friends, another December finds us older, hopefully wiser, and definitely noisier. We welcome you to the annual report of the Henderson household, summarized for your reading comfort.</p>
+      <p>The year opened gently: one new job, one new bicycle, one stubborn daffodil that arrived in February like an early guest. By summer, the porch swing finally had its cushion, and the family road trip made it past four states without a single argument worth remembering.</p>
+    </div>
+    <div class="col">
+      <p>In autumn, we did what we do best: cooking far too much food and inviting anyone too polite to run. The kids are taller, the dog is rounder, and the cat maintains her longstanding policy of ignoring all of us, then demanding chairs.</p>
+      <p>You remain in our holiday greetings list not by tradition alone, but because you have been kind to us in the plain, steady way that matters. May your season be warm and your new year be generous.</p>
+    </div>
+  </div>
+
+  <div class="signoff">
+    <div class="blessing">"Joy shared is joy doubled; dessert shared is dessert halved, so we will share joy instead."</div>
+    <div class="names">
+      <div class="script-name">Alex, Sam &amp; Milo</div>
+      <div class="who">and Buttercup, honorary correspondent</div>
+    </div>
+  </div>
+</body>
+</html>

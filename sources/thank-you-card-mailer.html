@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Thank You Card Mailer</title>
+<link rel="stylesheet" href="../assets/css/print.css">
+<style>
+  @page { size: 8.5in 11in; margin: 0.4in; }
+  body { font-family: "Mulish", "Sen", Arial, sans-serif; }
+
+  .fold-note { text-align: center; font-size: 7.5pt; letter-spacing: 0.1em; text-transform: uppercase; color: #9aa3a0; margin: 0 0 4pt; }
+  .halves { display: flex; flex-direction: column; }
+
+  /* FRONT (top half) */
+  .front {
+    flex: none;
+    height: 4.6in;
+    background: var(--cream);
+    border: 1pt solid var(--forest);
+    border-bottom: 0.5pt dashed #b7c4bb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.25in 0.4in;
+    overflow: hidden;
+  }
+  .front .hands { color: var(--pine); font-size: 13pt; letter-spacing: 0.5em; margin-bottom: 0.14in; }
+  .front .script-big { font-family: "Great Vibes", cursive; font-size: 37pt; color: var(--forest); line-height: 1.05; margin-bottom: 0.1in; }
+  .front .from-line { font-family: "Playfair Display", Georgia, serif; font-size: 10pt; color: var(--ink); width: 4.6in; }
+  .front .from-label { font-size: 8pt; color: var(--soft-ink); letter-spacing: 0.16em; text-transform: uppercase; margin-top: 0.16in; }
+
+  /* BACK (bottom half, ends up outside after folding) */
+  .back {
+    flex: none;
+    height: 4.6in;
+    background: #ffffff;
+    border: 1pt solid #b7c4bb;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2in 0.24in;
+    overflow: hidden;
+  }
+  .back .intro { display: flex; margin-bottom: 0.12in; }
+  .back .intro .col { flex: 1; padding-right: 0.18in; }
+  .back h3 { font-size: 8pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cranberry); margin-bottom: 5pt; }
+  .back .intro p { font-size: 9pt; color: var(--soft-ink); line-height: 1.5; }
+  .back .bottom-row { display: flex; flex: 1; }
+  .back .mailpanel {
+    flex: 1;
+    border: 0.75pt solid var(--ink);
+    padding: 8pt 12pt;
+    font-size: 9pt;
+    display: flex;
+    flex-direction: column;
+  }
+  .mailpanel .m-title { font-size: 7.5pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink); font-weight: 700; border-bottom: 0.75pt solid var(--ink); padding-bottom: 5pt; margin-bottom: 7pt; }
+  .mailpanel .fill { display: block; border-bottom: 0.75pt solid #6b6b6b; height: 0.42in; }
+  .mailpanel .m-hint { font-size: 7.5pt; color: #8c9491; margin: 4pt 0 2pt; }
+  .back .side-col {
+    width: 1.05in;
+    margin-left: 0.16in;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .stampbox {
+    width: 0.9in; height: 1.05in;
+    border: 0.75pt dashed #8c9491;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    font-size: 6.5pt; color: #8c9491; line-height: 1.5;
+  }
+  .back .side-note { font-size: 7pt; color: #9aa3a0; text-align: center; line-height: 1.4; margin-bottom: 6pt; }
+
+  /* PAGE 2: inside note area */
+  .inside { border: 1pt solid var(--forest); background: #fffef9; height: 9.4in; padding: 0.3in; display: flex; flex-direction: column; }
+  .inside .i-head { text-align: center; margin-bottom: 0.15in; }
+  .inside .i-script { font-family: "Great Vibes", cursive; font-size: 26pt; color: var(--pine); }
+  .inside .i-small { font-size: 8.5pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--soft-ink); }
+  .inside .i-line-group { flex: 1; display: flex; flex-direction: column; }
+  .inside .i-line-group .write-line { flex: 1; }
+  .inside .thanks-foot { border-top: 0.5pt solid #d9d4c7; padding-top: 8pt; display: flex; }
+  .inside .thanks-foot .sign { flex: 1; font-family: "Great Vibes", cursive; font-size: 18pt; color: var(--ink); }
+  .inside .thanks-foot .datebox { font-size: 8pt; color: #8c9491; letter-spacing: 0.08em; }
+</style>
+</head>
+<body>
+  <div class="fold-note">Page 1 of 2 &middot; fold on the dashed line &middot; the address should end up on the outside back</div>
+  <div class="halves">
+    <div class="front">
+      <div class="hands">&#10022;&#10022;&#10022;</div>
+      <div class="script-big">Thank You</div>
+      <div class="from-line">with gratitude &amp; full hearts, from the Henderson family</div>
+      <div class="from-label">nice enough to send &middot; thoughtful enough to unwrap twice</div>
+    </div>
+    <div class="back">
+      <div class="intro">
+        <div class="col">
+          <h3>Why we&apos;re writing</h3>
+          <p>Your gift, presence, help, or general wonderfulness did not go unnoticed. This little card has one job: to say thank you properly.</p>
+        </div>
+        <div class="col">
+          <h3>After folding</h3>
+          <p>This panel becomes the outside back of the card. Write the address below, affix a stamp, and let it fly.</p>
+        </div>
+      </div>
+      <div class="bottom-row">
+        <div class="mailpanel">
+          <div class="m-title">Address</div>
+          <span class="fill">&nbsp;</span>
+          <span class="fill">&nbsp;</span>
+          <span class="fill">&nbsp;</span>
+          <span class="m-hint">First &middot; line &middot; city &middot; state &middot; zip</span>
+          <span class="fill">&nbsp;</span>
+        </div>
+        <div class="side-col">
+          <div class="side-note">a kid may lick and apply the stamp under proper supervision</div>
+          <div class="stampbox">Affix<br>stamp<br>here &#10024;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p style="break-before: page;"></p>
+
+  <div class="fold-note">Page 2 of 2 &middot; print double-sided (long-edge flip) so the note lands inside the card</div>
+  <div class="inside">
+    <div class="i-head">
+      <div class="i-script">Dearest person,</div>
+      <div class="i-small">Five honest lines beat five polite paragraphs</div>
+    </div>
+    <div class="i-line-group">
+      <div class="write-line">&nbsp;</div>
+      <div class="write-line">&nbsp;</div>
+      <div class="write-line">&nbsp;</div>
+      <div class="write-line">&nbsp;</div>
+      <div class="write-line">&nbsp;</div>
+    </div>
+    <div class="thanks-foot">
+      <div class="sign">The Hendersons</div>
+      <div class="datebox">December 2026 &middot; Sent with love, probably by a kid who wanted to lick the stamps.</div>
+    </div>
+  </div>
+</body>
+</html>
