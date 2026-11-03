@@ -1,6 +1,10 @@
-__pycache__/
-.pytest_cache/
 *.pyc
-.venv/
-venv/
 .build-tmp/
+.env
+.env.*
+.pytest_cache/
+.venv/
+__pycache__/
+dist/*.tmp
+node_modules/
+venv/
